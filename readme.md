@@ -2,17 +2,24 @@
 
 Welcome to the Global Health Supply Chain Analysis repository! This project provides a comprehensive analysis of supply chain health commodity shipments and pricing data, with a specific focus on Antiretroviral (ARV) and HIV lab shipments to supported countries in the year 2022.
 
-## Contents
+## Table of Contents
 
-- **analysis.sql**: This SQL script contains a series of well-structured queries and analyses that uncover trends, patterns, and valuable insights from the supply chain data.
-- **Supply_Chain_Shipment_Pricing_Data.csv**: The raw dataset in CSV format, containing a wealth of information related to health commodity shipments and pricing.
-- **Supply_Chain_Shipment_Pricing_Data.db**: A SQLite database version of the dataset, making it easier to run SQL queries and perform analysis.
+1. [Objective](#objective)
+2. [Key Insights](#key-insights)
+3. [Data Analysis](#data-analysis)
+4. [Data Source](#data-source)
+5. [Getting Started](#getting-started)
+6. [Contributing](#contributing)
+7. [Feedback](#feedback)
+8. [Disclaimer](#disclaimer)
 
 ## Objective
 
 The primary objective of this project is to provide stakeholders with a comprehensive understanding of global spending on specific health commodities, particularly ARV and HIV lab shipments. When analyzed in conjunction with related data sources such as the Global Fund's Price, Quality, and Reporting (PQR) data, this dataset offers a holistic view of the global health supply chain landscape in 2022.
 
 ## Key Insights
+
+This section provides a summary of the key insights derived from the data analysis:
 
 - Analysis of pricing ranges and trends for health commodities.
 - Volumes of commodities delivered by country, offering insights into distribution patterns.
@@ -22,33 +29,61 @@ The primary objective of this project is to provide stakeholders with a comprehe
 
 Here are some key findings from the data analysis:
 
-- **Shipment Methods**: There are four primary shipment methods: air, truck, air charter, and ocean. Air shipment is the most popular, followed by trucking and ocean.
+### Shipment Methods
 
-- **Common Countries**: The top five most common countries in the dataset are South Africa, Nigeria, Côte d'Ivoire, Uganda, and Vietnam.
+- There are four primary shipment methods: air, truck, air charter, and ocean. Air shipment is the most popular, followed by trucking and ocean.
 
-- **Product Group Distribution**: The most common product group is Antiretroviral (ARVs), followed by HRDTs.
+### Common Countries
 
-- **Average Line Item Value**: ARVs have the highest average line item value, followed by HRDTs.
+- The top five most common countries in the dataset are South Africa, Nigeria, Côte d'Ivoire, Uganda, and Vietnam.
 
-- **Average Weight by Shipment Mode**: Air Charter has the highest average weight, followed by Ocean. Truck has the lowest average weight.
+### Product Group Distribution
 
-- **Average Freight Cost by Shipment Mode**: Air Charter has the highest average freight cost, followed by Ocean. Truck has the lowest average cost.
+- The most common product group is Antiretroviral (ARVs), followed by HRDTs.
 
-- **Total Line Item Value and Freight Cost by Country**: Nigeria has the highest total line item value and total freight cost, followed by Zambia.
+### Average Line Item Value
 
-- **Average Unit Price by Product Group and Shipment Mode**: Unit prices vary significantly among different product groups and shipment modes.
+- ARVs have the highest average line item value, followed by HRDTs.
 
-- **Common Dosage Forms**: ARVs are commonly found in tablet and tablet - FDC forms, while HRDTs are commonly found as test kits.
+### Average Weight by Shipment Mode
 
-- **Seasonality Analysis**: You can analyze seasonality in line item quantities for specific countries, such as Nigeria.
+- Air Charter has the highest average weight, followed by Ocean. Truck has the lowest average weight.
 
-- **Profitable Vendors**: SCMS from RDC in Zambia, Orgenics Ltd. from Haiti, and Aurobindo Pharma Limited from Vietnam are among the most profitable vendors.
+### Average Freight Cost by Shipment Mode
 
-- **Common Brand and Molecule/Test Type Combinations**: Efavirenz, Nevirapine, and Lamivudine/Nevirapine/Zidovudine are the top three common combinations.
+- Air Charter has the highest average freight cost, followed by Ocean. Truck has the lowest average cost.
 
-- **Top Product Descriptions**: The top product descriptions by line item quantity include Lamivudine/Nevirapine/Zidovudine 150/200/300mg, Efavirenz 600mg, and Efavirenz/Lamivudine/Tenofovir Disoproxil Fumarate 600/300/300mg.
+### Total Line Item Value and Freight Cost by Country
 
-- **Shipment Modes by Product Group**: ARV products are primarily shipped via Air, while HRDT products are transported by Air as well. ANTM and ACT product groups also utilize Air shipments, and MRDT products are delivered by Air.
+- Nigeria has the highest total line item value and total freight cost, followed by Zambia.
+
+### Average Unit Price by Product Group and Shipment Mode
+
+- Unit prices vary significantly among different product groups and shipment modes.
+
+### Common Dosage Forms
+
+- ARVs are commonly found in tablet and tablet - FDC forms, while HRDTs are commonly found as test kits.
+
+### Seasonality Analysis
+
+- You can analyze seasonality in line item quantities for specific countries, such as Nigeria.
+
+### Profitable Vendors
+
+- SCMS from RDC in Zambia, Orgenics Ltd. from Haiti, and Aurobindo Pharma Limited from Vietnam are among the most profitable vendors.
+
+### Common Brand and Molecule/Test Type Combinations
+
+- Efavirenz, Nevirapine, and Lamivudine/Nevirapine/Zidovudine are the top three common combinations.
+
+### Top Product Descriptions
+
+- The top product descriptions by line item quantity include Lamivudine/Nevirapine/Zidovudine 150/200/300mg, Efavirenz 600mg, and Efavirenz/Lamivudine/Tenofovir Disoproxil Fumarate 600/300/300mg.
+
+### Shipment Modes by Product Group
+
+- ARV products are primarily shipped via Air, while HRDT products are transported by Air as well. ANTM and ACT product groups also utilize Air shipments, and MRDT products are delivered by Air.
 
 ## Data Source
 
@@ -56,8 +91,9 @@ The data for this project was sourced from the U.S. Agency for International Dev
 
 ## Getting Started
 
-1. Clone this repository to your local machine.
+To get started with this project, follow these steps:
 
+1. Clone this repository to your local machine.
    ```bash
    git clone https://github.com/alex-t-reed/Global-Health-Supply-Chain-Analysis-2022
 2. Review the SQL analysis script in `analysis.sql` to explore the insights and findings.
@@ -69,11 +105,10 @@ Contributions to this project are welcome! If you have insights, improvements, o
 
 ## Feedback
 
-For questions, suggestions, or collaboration opportunities, please don't hesitate to reach out to Alex Reed at [alexreed@ucsb.edu](mailto:alexreed@ucsb.edu).
+For questions, suggestions, or collaboration opportunities, please don't hesitate to reach out me, Alex Reed at [alexreed@ucsb.edu](mailto:alexreed@ucsb.edu).
 
 ## Disclaimer
 
 This project is for informational and analytical purposes only. The data and conclusions presented here may not reflect real-world circumstances accurately, and users should exercise due diligence when making decisions based on the provided analysis.
 
 Thank you for your interest in this analysis!
-
