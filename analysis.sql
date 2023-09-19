@@ -132,7 +132,6 @@ FROM supply_chain_pricing
 WHERE product_group = 'HRDT' AND unit_price IS NOT NULL
 GROUP BY product_group, vendor
 ORDER BY avg_unit_price DESC;
--- This query focuses on a specific product group (HRDT) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- BIO-RAD LABORATORIES PTY LTD. (SOUTH AFRICA) has the highest average unit price for HRDT of 41.68 and Premier Medical Corporation Ltd. has the lowest average unit price for HRDT of 0.67.
 
 -- Identify vendors with the highest and lowest average unit prices for a specific product group: ARV.
@@ -141,7 +140,6 @@ FROM supply_chain_pricing
 WHERE product_group = 'ARV' AND unit_price IS NOT NULL
 GROUP BY product_group, vendor
 ORDER BY avg_unit_price DESC;
--- This query focuses on a specific product group (ARV) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- IDIS LIMITED has the highest average unit price for ARV of 1.64 and AUROBINDO PHARAM (SOUTH AFRICA) has the lowest average unit price for ARV of 0.01.
 
 -- Identify vendors with the highest and lowest average unit prices for a specific product group: ANTM
@@ -150,7 +148,6 @@ FROM supply_chain_pricing
 WHERE product_group = 'ANTM' AND unit_price IS NOT NULL
 GROUP BY product_group, vendor
 ORDER BY avg_unit_price DESC;
--- This query focuses on a specific product group (HRDT) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- AMSTELFARMA B.V. has the highest average unit price for ANTM of 0.15 and THE MEDICAL EXPORT GROUP BV has the lowest average unit price for ANTM of 0.01.
 
 -- Identify vendors with the highest and lowest average unit prices for a specific product group: ACT
@@ -159,7 +156,6 @@ FROM supply_chain_pricing
 WHERE product_group = 'ACT' AND unit_price IS NOT NULL
 GROUP BY product_group, vendor
 ORDER BY avg_unit_price DESC;
--- This query focuses on a specific product group (HRDT) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- MISSIONPHARMA A/S has the highest average unit price for ACT of 0.07 and IDA FOUNDATION has the lowest average unit price for ACT of 0.05.
 
 -- Identify vendors with the highest and lowest average unit prices for a specific product group: MRDT
@@ -168,7 +164,6 @@ FROM supply_chain_pricing
 WHERE product_group = 'MRDT' AND unit_price IS NOT NULL
 GROUP BY product_group, vendor
 ORDER BY avg_unit_price DESC;
--- This query focuses on a specific product group (HRDT) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- ZEPHYR BIOMEDICALS has the highest average unit price for MRDT of 1.5 andACCESS BIO, INC. has the lowest average unit price for MRDT of 0.39.
 
 -- What vendors are most profitable and what country are these vendors from?
