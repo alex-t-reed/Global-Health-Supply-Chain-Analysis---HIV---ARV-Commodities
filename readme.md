@@ -28,62 +28,69 @@ This section provides a summary of the key insights derived from the data analys
 ## Data Analysis
 
 Here are some key findings from the data analysis:
+1. **Data Trimming:**
+   - Trimmed various columns in the `supply_chain_pricing` table.
 
-### Shipment Methods
+2. **Shipment Methods:**
+   - Four shipment methods found: air, truck, air charter, and ocean.
+   - 360 records with null shipment modes.
 
-- There are four primary shipment methods: air, truck, air charter, and ocean. Air shipment is the most popular, followed by trucking and ocean.
+3. **Most Used Shipment Method:**
+   - Air shipment is most popular (mode_count: 6113), followed by truck (371).
 
-### Common Countries
+4. **Shipment Method by Country:**
+   - Air is highest in Vietnam, air charter in Nigeria, ocean in South Africa, and truck in South Africa.
 
-- The top five most common countries in the dataset are South Africa, Nigeria, Côte d'Ivoire, Uganda, and Vietnam.
+5. **Common Countries:**
+   - Top 5 common countries: South Africa (1406), Nigeria (1194), Côte d'Ivoire (1083), Uganda (779), Vietnam (688).
 
-### Product Group Distribution
+6. **Product Group Distribution:**
+   - Antiretroviral (ARVs) is the most common (8550), followed by HRDTs (1728).
 
-- The most common product group is Antiretroviral (ARVs), followed by HRDTs.
+7. **Average Line Item Value by Product Group:**
+   - ARV: 165288.9 USD, HRDT: 123463.4 USD.
 
-### Average Line Item Value
+8. **Average Weight by Shipment Mode:**
+   - Air Charter: 5261.74 kg, Ocean: 5227.56 kg, Truck: 2745.23 kg, Air: 1357.94 kg.
 
-- ARVs have the highest average line item value, followed by HRDTs.
+9. **Average Freight Cost by Shipment Mode:**
+   - Air Charter: 13732.47 USD, Ocean: 9678.51 USD, Truck: 4192.82 USD.
 
-### Average Weight by Shipment Mode
+10. **Total Line Item Value and Freight Cost by Country:**
+    - Nigeria has the highest total line item value and freight cost.
 
-- Air Charter has the highest average weight, followed by Ocean. Truck has the lowest average weight.
+11. **Average Unit Price by Product Group and Shipment Mode:**
+    - Unit prices vary significantly across groups and modes.
 
-### Average Freight Cost by Shipment Mode
+12. **Dosage Form Distribution:**
+    - ARVs in tablet forms, HRDTs in test kits, ACTs in Tablet - FDC + blister, ANTM in Tablet - FDC.
 
-- Air Charter has the highest average freight cost, followed by Ocean. Truck has the lowest average cost.
+13. **High/Low Unit Prices for Product Groups:**
+    - HRDT: High - 41.68 (BIO-RAD LABORATORIES), Low - 0.67 (Premier Medical Corporation Ltd.).
+    - ARV: High - 1.64 (IDIS LIMITED), Low - 0.01 (AUROBINDO PHARAM).
+    - ANTM: High - 0.15 (AMSTELFARMA B.V.), Low - 0.01 (THE MEDICAL EXPORT GROUP BV).
+    - ACT: High - 0.07 (MISSIONPHARMA A/S), Low - 0.05 (IDA FOUNDATION).
+    - MRDT: High - 1.5 (ZEPHYR BIOMEDICALS), Low - 0.39 (ACCESS BIO, INC.).
 
-### Total Line Item Value and Freight Cost by Country
+14. **Most Profitable Vendors and Countries:**
+    - SCMS (Zambia), Orgenics (Haiti), Aurobindo Pharma (Vietnam).
 
-- Nigeria has the highest total line item value and total freight cost, followed by Zambia.
+15. **Common Brand/Molecule Combinations:**
+    - Top 3: Efavirenz (1056), Nevirapine (849), Lamivudine/Nevirapine/Zidovudine (707).
 
-### Average Unit Price by Product Group and Shipment Mode
+16. **Common Brand/Molecule/Vendor Combinations:**
+    - SCMS (RDC) is the vendor for the top 3 combinations.
 
-- Unit prices vary significantly among different product groups and shipment modes.
+17. **Top Product Descriptions by Line Item Quantity:**
+    - (1) Lamivudine/Nevirapine/Zidovudine 150/200/300mg, tablets, 60 Tabs.
+    - (2) Efavirenz 600mg, tablets, 30 Tabs.
+    - (3) Efavirenz/Lamivudine/Tenofovir Disoproxil Fumarate 600/300/300mg, tablets, 30 Tabs.
+    - (4) Nevirapine 200mg, tablets, 60 Tabs.
+    - (5) Lamivudine/Zidovudine 150/300mg, tablets, 60 Tabs.
 
-### Common Dosage Forms
+18. **Product Groups and Shipment Modes:**
+    - ARV products primarily shipped via Air, HRDT via Air, ANTM and ACT via Air, MRDT via Air.
 
-- ARVs are commonly found in tablet and tablet - FDC forms, while HRDTs are commonly found as test kits.
-
-### Seasonality Analysis
-
-- You can analyze seasonality in line item quantities for specific countries, such as Nigeria.
-
-### Profitable Vendors
-
-- SCMS from RDC in Zambia, Orgenics Ltd. from Haiti, and Aurobindo Pharma Limited from Vietnam are among the most profitable vendors.
-
-### Common Brand and Molecule/Test Type Combinations
-
-- Efavirenz, Nevirapine, and Lamivudine/Nevirapine/Zidovudine are the top three common combinations.
-
-### Top Product Descriptions
-
-- The top product descriptions by line item quantity include Lamivudine/Nevirapine/Zidovudine 150/200/300mg, Efavirenz 600mg, and Efavirenz/Lamivudine/Tenofovir Disoproxil Fumarate 600/300/300mg.
-
-### Shipment Modes by Product Group
-
-- ARV products are primarily shipped via Air, while HRDT products are transported by Air as well. ANTM and ACT product groups also utilize Air shipments, and MRDT products are delivered by Air.
 
 ## Data Source
 
