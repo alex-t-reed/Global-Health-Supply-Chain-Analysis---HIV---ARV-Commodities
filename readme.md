@@ -1,6 +1,6 @@
 # Global Health Supply Chain Analysis (2022)
 
-Welcome to the Global Health Supply Chain Analysis repository! This project provides a comprehensive analysis of supply chain health commodity shipments and pricing data, with a specific focus on Antiretroviral (ARV) and HIV lab shipments to supported countries in the year 2022.
+Welcome to the Global Health Supply Chain Analysis repository! This SQL data analysis project provides a comprehensive analysis of supply chain health commodity shipments and pricing data, with a specific focus on Antiretroviral (ARV) and HIV lab shipments to supported countries in the year 2022.
 
 ## Table of Contents
 
