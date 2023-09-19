@@ -1,5 +1,3 @@
-/* Analyzed by Alex Reed on September 19, 2023 */
-
 /* TRIM the data to avoid errors
 UPDATE supply_chain_pricing
 SET
@@ -128,14 +126,6 @@ GROUP BY product_group, dosage_form
 ORDER BY product_group, form_count DESC;
 -- ARVs are most commonly found in dosage forms of tablet and tablet - FDC, HRDTs are most commonly found in the form of test kits, and ACTs as Tablet - FDC + blister, and ANTM as Tablet - FDC.
 
--- What is the trend in line item quantities over time for a specific product group (e.g., ARVs)?
-SELECT pq_first_sent_to_client_date, SUM(line_item_quantity) AS total_quantity
-FROM supply_chain_pricing
-WHERE product_group = 'Antiretroviral (ARVs)'
-GROUP BY pq_first_sent_to_client_date
-ORDER BY pq_first_sent_to_client_date;
--- This query helps visualize the trend in line item quantities over time for a specific product group, aiding in demand forecasting.
-
 -- Identify vendors with the highest and lowest average unit prices for a specific product group : HRDT.
 SELECT product_group, vendor, ROUND(AVG(unit_price), 2) AS avg_unit_price
 FROM supply_chain_pricing
@@ -181,15 +171,6 @@ ORDER BY avg_unit_price DESC;
 -- This query focuses on a specific product group (HRDT) and identifies vendors with the highest and lowest average unit prices, aiding in vendor selection and negotiation.
 -- ZEPHYR BIOMEDICALS has the highest average unit price for MRDT of 1.5 andACCESS BIO, INC. has the lowest average unit price for MRDT of 0.39.
 
--- Investigate the seasonality in line item quantities for a specific country (e.g., Nigeria).
-SELECT strftime('%Y-%m', pq_first_sent_to_client_date) AS month_year, SUM(line_item_quantity) AS total_quantity
-FROM supply_chain_pricing
-WHERE country = 'Nigeria' AND pq_first_sent_to_client_date IS NOT NULL
-GROUP BY month_year
-ORDER BY month_year;
--- This query analyzes the seasonality in line item quantities for a specific country (Nigeria) by aggregating quantities by month and year.
-
-
 -- What vendors are most profitable and what country are these vendors from?
 SELECT vendor,COUNTRY, ROUND(SUM(line_item_value - freight_cost_usd),2) AS total_profit
 FROM  supply_chain_pricing
@@ -197,7 +178,6 @@ WHERE  line_item_value IS NOT NULL AND freight_cost_usd IS NOT NULL
 GROUP BY vendor
 ORDER BY total_profit DESC;
 -- SCMS from RDC from Zambia, Orgenics, Ltd from Haiti, and Aurobindo Pharma Limited from Vietnam are the three most portfotable in terms of line item value minus freight costs.
-
 
 -- Find the 3 most common combination of brand and molecule/test type
 SELECT brand, molecule_test_type, COUNT(*) AS combination_count
