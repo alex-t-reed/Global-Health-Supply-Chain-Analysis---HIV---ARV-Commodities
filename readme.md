@@ -7,15 +7,17 @@ Welcome to the Global Health Supply Chain Analysis repository! This SQL data ana
 1. [Objective](#objective)
 2. [Key Insights](#key-insights)
 3. [Data Analysis](#data-analysis)
-4. [Data Source](#data-source)
-5. [Getting Started](#getting-started)
-6. [Contributing](#contributing)
-7. [Feedback](#feedback)
-8. [Disclaimer](#disclaimer)
+4. [Strategies and Findings](#strategies-and-findings)
+5. [Skills Gained from This Project](#skills-gained-from-this-project)
+6. [Data Source](#data-source)
+7. [Getting Started](#getting-started)
+8. [Contributing](#contributing)
+9. [Feedback](#feedback)
+10. [Disclaimer](#disclaimer)
 
 ## Objective
 
-The primary objective of this project is to provide stakeholders with a comprehensive understanding of global spending on specific health commodities, particularly ARV and HIV lab shipments. When analyzed in conjunction with related data sources such as the Global Fund's Price, Quality, and Reporting (PQR) data, this dataset offers a holistic view of the global health supply chain landscape in 2022.
+The primary objective of this project is to provide stakeholders with a comprehensive understanding of global spending on specific health commodities, particularly ARV and HIV lab shipments, in 2022. This analysis enables data-driven decision-making in the global health sector.
 
 ## Key Insights
 
@@ -28,69 +30,94 @@ This section provides a summary of the key insights derived from the data analys
 ## Data Analysis
 
 Here are some key findings from the data analysis:
+
 1. **Data Trimming:**
-   - Trimmed various columns in the `supply_chain_pricing` table.
+   - The data was trimmed to eliminate potential errors and inconsistencies.
 
 2. **Shipment Methods:**
-   - Four shipment methods found: air, truck, air charter, and ocean.
-   - 360 records with null shipment modes.
+   - Four shipment methods were identified: air, truck, air charter, and ocean.
+   - 360 records had null shipment modes.
 
 3. **Most Used Shipment Method:**
-   - Air shipment is most popular (mode_count: 6113), followed by truck (371).
+   - Air shipment was the most popular method, followed by truck.
 
 4. **Shipment Method by Country:**
-   - Air is highest in Vietnam, air charter in Nigeria, ocean in South Africa, and truck in South Africa.
+   - Different countries had varying preferences for shipment methods.
 
 5. **Common Countries:**
-   - Top 5 common countries: South Africa (1406), Nigeria (1194), Côte d'Ivoire (1083), Uganda (779), Vietnam (688).
+   - The top five most common countries in the dataset were South Africa, Nigeria, Côte d'Ivoire, Uganda, and Vietnam.
 
 6. **Product Group Distribution:**
-   - Antiretroviral (ARVs) is the most common (8550), followed by HRDTs (1728).
+   - Antiretroviral (ARVs) was the most common product group.
 
 7. **Average Line Item Value by Product Group:**
-   - ARV: 165288.9 USD, HRDT: 123463.4 USD.
+   - ARVs had the highest average line item value.
 
 8. **Average Weight by Shipment Mode:**
-   - Air Charter: 5261.74 kg, Ocean: 5227.56 kg, Truck: 2745.23 kg, Air: 1357.94 kg.
+   - Air charter had the highest average weight.
 
 9. **Average Freight Cost by Shipment Mode:**
-   - Air Charter: 13732.47 USD, Ocean: 9678.51 USD, Truck: 4192.82 USD.
+   - Air charter had the highest average freight cost.
 
 10. **Total Line Item Value and Freight Cost by Country:**
-    - Nigeria has the highest total line item value and freight cost.
+    - Nigeria had the highest total line item value and freight cost.
 
 11. **Average Unit Price by Product Group and Shipment Mode:**
-    - Unit prices vary significantly across groups and modes.
+    - Significant variations in unit prices were observed.
 
 12. **Dosage Form Distribution:**
-    - ARVs in tablet forms, HRDTs in test kits, ACTs in Tablet - FDC + blister, ANTM in Tablet - FDC.
+    - Different dosage forms were associated with various product groups.
 
 13. **High/Low Unit Prices for Product Groups:**
-    - HRDT: High - 41.68 (BIO-RAD LABORATORIES), Low - 0.67 (Premier Medical Corporation Ltd.).
-    - ARV: High - 1.64 (IDIS LIMITED), Low - 0.01 (AUROBINDO PHARAM).
-    - ANTM: High - 0.15 (AMSTELFARMA B.V.), Low - 0.01 (THE MEDICAL EXPORT GROUP BV).
-    - ACT: High - 0.07 (MISSIONPHARMA A/S), Low - 0.05 (IDA FOUNDATION).
-    - MRDT: High - 1.5 (ZEPHYR BIOMEDICALS), Low - 0.39 (ACCESS BIO, INC.).
+    - HRDT had the highest and lowest unit prices.
 
 14. **Most Profitable Vendors and Countries:**
-    - SCMS (Zambia), Orgenics (Haiti), Aurobindo Pharma (Vietnam).
+    - Identified the most profitable vendors and their countries.
 
 15. **Common Brand/Molecule Combinations:**
-    - Top 3: Efavirenz (1056), Nevirapine (849), Lamivudine/Nevirapine/Zidovudine (707).
+    - Explored the top three common brand/molecule combinations.
 
 16. **Common Brand/Molecule/Vendor Combinations:**
-    - SCMS (RDC) is the vendor for the top 3 combinations.
+    - Identified the most common brand/molecule/vendor combinations.
 
 17. **Top Product Descriptions by Line Item Quantity:**
-    - (1) Lamivudine/Nevirapine/Zidovudine 150/200/300mg, tablets, 60 Tabs.
-    - (2) Efavirenz 600mg, tablets, 30 Tabs.
-    - (3) Efavirenz/Lamivudine/Tenofovir Disoproxil Fumarate 600/300/300mg, tablets, 30 Tabs.
-    - (4) Nevirapine 200mg, tablets, 60 Tabs.
-    - (5) Lamivudine/Zidovudine 150/300mg, tablets, 60 Tabs.
+    - Highlighted the top product descriptions by quantity.
 
 18. **Product Groups and Shipment Modes:**
-    - ARV products primarily shipped via Air, HRDT via Air, ANTM and ACT via Air, MRDT via Air.
+    - Examined which shipment modes were typically used by different product groups.
 
+## Strategies and Findings
+
+Based on the analysis, the following strategies and findings can be implemented:
+
+- Optimize shipment methods based on cost-effectiveness and delivery times.
+- Negotiate with vendors to improve pricing, especially for high-value product groups.
+- Monitor and manage inventory levels in countries with high demand.
+- Focus on improving data accuracy and completeness for better decision-making.
+- Explore opportunities for collaboration with profitable vendors.
+- Promote the use of cost-effective dosage forms.
+
+## Skills Gained from This Project
+
+Throughout the Global Health Supply Chain Analysis project, I acquired and demonstrated a diverse set of skills relevant to the role of a data analyst:
+
+1. **Data Cleaning and Preprocessing:** Proficiently cleaned and preprocessed data using SQL, ensuring data accuracy and consistency by employing commands like TRIM to remove leading and trailing spaces.
+
+2. **SQL Data Analysis:** Conducted in-depth data analysis using SQL, involving tasks such as aggregations, filtering, sorting, and joining tables to derive actionable insights from the dataset.
+
+3. **Statistical Analysis:** Performed statistical analyses, including calculating averages, counts, and percentages, to uncover key trends and patterns within the dataset.
+
+4. **Data Interpretation:** Effectively interpreted data analysis results, enabling the formulation of data-driven recommendations and informed decision-making.
+
+5. **Data Visualization:** Utilized data visualization tools, such as Matplotlib and Seaborn in Python, to create visual representations of data findings for presentation purposes.
+
+6. **Critical Thinking:** Applied critical thinking skills to identify patterns, outliers, and anomalies within the data, leading to more robust and insightful analyses.
+
+7. **Collaboration and Communication:** Enhanced communication skills by documenting and presenting complex data-related information clearly to both technical and non-technical stakeholders.
+
+8. **Version Control:** Employed Git and GitHub for version control, facilitating collaborative work and tracking changes throughout the project's development.
+
+These skills, developed and applied during the course of this project, make me a well-rounded data analyst capable of effectively handling complex datasets and contributing to data-driven decision-making processes.
 
 ## Data Source
 
@@ -103,7 +130,8 @@ To get started with this project, follow these steps:
 1. Clone this repository to your local machine.
    ```bash
    git clone https://github.com/alex-t-reed/Global-Health-Supply-Chain-Analysis-2022
-2. Review the SQL analysis script in `analysis.sql` to explore the insights and findings.
+   ```
+2. Review the SQL analysis script in analysis.sql to explore the insights and findings.
 3. Access the raw data in CSV format via `Supply_Chain_Shipment_Pricing_Data.csv` or use the SQLite database version in `Supply_Chain_Shipment_Pricing_Data.db` for running SQL queries.
 
 ## Contributing
@@ -121,5 +149,3 @@ For questions, suggestions, or collaboration opportunities, please don't hesitat
 ## Disclaimer
 
 This project is for informational and analytical purposes only. The data and conclusions presented here may not reflect real-world circumstances accurately, and users should exercise due diligence when making decisions based on the provided analysis.
-
-Thank you for your interest in this analysis!
