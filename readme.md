@@ -106,7 +106,7 @@ Based on the analysis, the following strategies and findings can be implemented:
 Throughout the Global Health Supply Chain Analysis project, I acquired and demonstrated a diverse set of skills relevant to the role of a data analyst:
 
 1. **Data Cleaning and Preprocessing:** Proficiently cleaned and preprocessed data using SQL, ensuring data accuracy and consistency by employing commands like TRIM to remove leading and trailing spaces.
-2. **SQL Data Analysis:** Conducted in-depth data analysis using SQL, involving tasks such as aggregations, filtering, sorting, and joining tables to derive actionable insights from the dataset.
+2. **SQL Data Analysis:** Conducted in-depth data analysis using SQL, involving tasks such as aggregations, filtering, and sorting tables to derive actionable insights from the dataset.
 3. **Statistical Analysis:** Performed statistical analyses, including calculating averages, counts, and percentages, to uncover key trends and patterns within the dataset.
 4. **Data Interpretation:** Effectively interpreted data analysis results, enabling the formulation of data-driven recommendations and informed decision-making.
 6. **Critical Thinking:** Applied critical thinking skills to identify patterns, outliers, and anomalies within the data, leading to more robust and insightful analyses.
