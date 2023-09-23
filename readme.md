@@ -5,11 +5,11 @@ Welcome to the Global Health Supply Chain Analysis repository! This SQL data ana
 ## Table of Contents
 
 1. [Objective](#objective)
-2. [Key Insights](#key-insights)
-3. [Data Analysis](#data-analysis)
-4. [Strategies and Findings](#strategies-and-findings)
-5. [Skills Gained from This Project](#skills-gained-from-this-project)
-6. [Data Source](#data-source)
+2. [Data Source](#data-source)
+3. [Key Insights](#key-insights)
+4. [Data Analysis](#data-analysis)
+5. [Strategies and Findings](#strategies-and-findings)
+6. [Skills Gained from This Project](#skills-gained-from-this-project)
 7. [Getting Started](#getting-started)
 8. [Contributing](#contributing)
 9. [Feedback](#feedback)
@@ -18,6 +18,10 @@ Welcome to the Global Health Supply Chain Analysis repository! This SQL data ana
 ## Objective
 
 The primary objective of this project is to provide stakeholders with a comprehensive understanding of global spending on specific health commodities, particularly ARV and HIV lab shipments, in 2022. This analysis enables data-driven decision-making in the global health sector.
+
+## Data Source
+
+The data for this project was sourced from the U.S. Agency for International Development (USAID) and can be found at [US Agency for International Development](https://catalog.data.gov/dataset/supply-chain-shipment-pricing-data-07d29).
 
 ## Key Insights
 
@@ -118,10 +122,6 @@ Throughout the Global Health Supply Chain Analysis project, I acquired and demon
 8. **Version Control:** Employed Git and GitHub for version control, facilitating collaborative work and tracking changes throughout the project's development.
 
 These skills, developed and applied during the course of this project, make me a well-rounded data analyst capable of effectively handling complex datasets and contributing to data-driven decision-making processes.
-
-## Data Source
-
-The data for this project was sourced from the U.S. Agency for International Development (USAID) and can be found at [US Agency for International Development](https://catalog.data.gov/dataset/supply-chain-shipment-pricing-data-07d29).
 
 ## Getting Started
 
