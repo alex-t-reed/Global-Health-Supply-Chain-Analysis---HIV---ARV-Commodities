@@ -106,22 +106,11 @@ Based on the analysis, the following strategies and findings can be implemented:
 Throughout the Global Health Supply Chain Analysis project, I acquired and demonstrated a diverse set of skills relevant to the role of a data analyst:
 
 1. **Data Cleaning and Preprocessing:** Proficiently cleaned and preprocessed data using SQL, ensuring data accuracy and consistency by employing commands like TRIM to remove leading and trailing spaces.
-
 2. **SQL Data Analysis:** Conducted in-depth data analysis using SQL, involving tasks such as aggregations, filtering, sorting, and joining tables to derive actionable insights from the dataset.
-
 3. **Statistical Analysis:** Performed statistical analyses, including calculating averages, counts, and percentages, to uncover key trends and patterns within the dataset.
-
 4. **Data Interpretation:** Effectively interpreted data analysis results, enabling the formulation of data-driven recommendations and informed decision-making.
-
-5. **Data Visualization:** Utilized data visualization tools, such as Matplotlib and Seaborn in Python, to create visual representations of data findings for presentation purposes.
-
 6. **Critical Thinking:** Applied critical thinking skills to identify patterns, outliers, and anomalies within the data, leading to more robust and insightful analyses.
-
-7. **Collaboration and Communication:** Enhanced communication skills by documenting and presenting complex data-related information clearly to both technical and non-technical stakeholders.
-
-8. **Version Control:** Employed Git and GitHub for version control, facilitating collaborative work and tracking changes throughout the project's development.
-
-These skills, developed and applied during the course of this project, make me a well-rounded data analyst capable of effectively handling complex datasets and contributing to data-driven decision-making processes.
+7. **Version Control:** Employed Git and GitHub for version control, facilitating collaborative work and tracking changes throughout the project's development.
 
 ## Getting Started
 
